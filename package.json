@@ -1,0 +1,38 @@
+{
+  "name": "repo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "repo",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint ./src --fix"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -e $GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --quiet --cache --fix",
+      "git add"
+    ]
+  },
+  "author": "pfan",
+  "license": "MIT",
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^7.0.0",
+    "@commitlint/config-conventional": "^7.0.1",
+    "chalk": "^2.4.1",
+    "eslint": "^4.19.1",
+    "eslint-config-o2team": "^0.1.6",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-react": "^7.8.2",
+    "husky": "^1.0.0-rc.13",
+    "lint-staged": "^7.2.0"
+  }
+}

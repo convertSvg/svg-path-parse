@@ -1,0 +1,17 @@
+{
+  "extends": ["o2team"],
+  "parser": "babel-eslint",
+  "rules": {
+    "class-methods-use-this": "off",
+    "prefer-rest-params": "off",
+    "arrow-body-style": "warn"
+  },
+  "overrides": [
+    {
+      "files": ["build/*.js"],
+      "rules": {
+        "import/no-commonjs": "off"
+      }
+    }
+  ]
+}
