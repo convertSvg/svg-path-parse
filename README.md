@@ -19,15 +19,17 @@ const pathDatas = pathParse(__your_path__).getSegments()
 // const pathDatas = pathParse(__your_path__).normalize()
 // const pathDatas = pathParse(__your_path__).absNormalize()
 
+serializePath(pathDatas)
 
 // out put
-// [
-//   {type: 'M', args: [0, 0]},
-//   {type: 'L', args: [10, 0]},
-//   {type: 'L', args: [30, 0]},
-//   {type: 'A', args: [15, 15, 1, 0, 1, 0, 0]}
-// ]
+// M896 480C894.656 480 893.536 480.608 892.256 480.768C894.72 479.84 893.568 479.232 892.256 479.232z
 ```
+
+### getSegments
+### normalize
+### absNormalize
+### serializePath
+
 
 ## License
 
