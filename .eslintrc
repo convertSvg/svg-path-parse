@@ -4,7 +4,11 @@
   "rules": {
     "class-methods-use-this": "off",
     "prefer-rest-params": "off",
-    "arrow-body-style": "warn"
+    "arrow-body-style": "warn",
+    "camelcase": 0,
+    "no-irregular-whitespace": 0,
+    "prefer-const": 1,
+    "array-callback-return": 0
   },
   "overrides": [
     {
