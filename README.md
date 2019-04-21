@@ -16,10 +16,12 @@ Takes an SVG path string. The following code…
 const { pathParse, serializePath } = require('./lib/path_parse')
 
 const pathDatas = pathParse(__your_path__).getSegments()
-// const pathDatas = pathParse(__your_path__).normalize()
-// const pathDatas = pathParse(__your_path__).absNormalize()
+// const pathDatas = pathParse(__your_path__).normalize({round: 2})
+// const pathDatas = pathParse(__your_path__).absNormalize({round: 2})
 
 serializePath(pathDatas)
+
+console.log('pathDatas', serializePath(pathDatas))
 
 // out put
 // M896 480C894.656 480 893.536 480.608 892.256 480.768C894.72 479.84 893.568 479.232 892.256 479.232z
@@ -28,6 +30,7 @@ serializePath(pathDatas)
 ### getSegments
 ### normalize
 ### absNormalize
+### relNormalize
 ### serializePath
 
 
