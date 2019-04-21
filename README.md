@@ -5,6 +5,11 @@ This is a small library to normalise SVG paths based on those normalised paths.
 Note: this package works with [path data](https://www.w3.org/TR/SVG11/paths.html#PathData) strings and [Paths](https://developer.mozilla.org/zh-CN/docs/Web/SVG/Tutorial/Paths),
 not with full svg xml sources.
 
+## Install 
+
+```
+npm install svgpath
+```
 
 ## Usage 
 
@@ -37,8 +42,6 @@ console.log('pathDatas', serializePath(pathDatas))
 ## License
 
 MIT
-
-
 
 
 
