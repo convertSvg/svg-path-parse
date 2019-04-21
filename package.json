@@ -1,8 +1,7 @@
 {
   "name": "svg-path-parse",
   "version": "1.0.0",
-  "private": true,
-  "description": "svg-path-parse",
+  "description": "This is a small library to normalise SVG paths based on those normalised paths.",
   "main": "index.js",
   "scripts": {
     "lint": "eslint ./src --fix",
@@ -34,5 +33,18 @@
     "eslint-plugin-react": "^7.8.2",
     "husky": "^1.0.0-rc.13",
     "lint-staged": "^7.2.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:convertSvg/svg-path-parse.git"
+  },
+  "keywords": [
+    "convert path",
+    "path",
+    "normalise SVG paths"
+  ],
+  "bugs": {
+    "url": "https://github.com/convertSvg/svg-path-parse/issues"
+  },
+  "homepage": "https://github.com/convertSvg/svg-path-parse"
 }
