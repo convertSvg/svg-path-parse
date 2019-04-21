@@ -24,7 +24,7 @@ serializePath(pathDatas)
 // out put
 // M896 480C894.656 480 893.536 480.608 892.256 480.768C894.72 479.84 893.568 479.232 892.256 479.232z
 ```
-
+## API
 ### getSegments
 ### normalize
 ### absNormalize
@@ -34,3 +34,7 @@ serializePath(pathDatas)
 ## License
 
 MIT
+
+
+
+
