@@ -1,11 +1,12 @@
 {
-  "name": "repo",
+  "name": "svg-path-parse",
   "version": "1.0.0",
   "private": true,
-  "description": "repo",
+  "description": "svg-path-parse",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint ./src --fix"
+    "lint": "eslint ./src --fix",
+    "start": "node index.js"
   },
   "husky": {
     "hooks": {
