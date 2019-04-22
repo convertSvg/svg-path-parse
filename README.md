@@ -25,6 +25,7 @@ const pathDatas = pathParse(__your_path__).getSegments()
 // const pathDatas = pathParse(__your_path__).relNormalize({round: 2})
 // const pathDatas = pathParse(__your_path__).absNormalize({round: 2})
 // const pathDatas = pathParse(__your_path__).absCairo({round: 2})
+// const pathDatas = pathParse(__your_path__).relCairo({round: 2})
 
 serializePath(pathDatas)
 
@@ -39,10 +40,10 @@ console.log('pathDatas', serializePath(pathDatas))
 ### absNormalize
 ### relNormalize
 ### absCairo
+### relCairo
 ### serializePath
 
 
 ## License
 
 MIT
-
