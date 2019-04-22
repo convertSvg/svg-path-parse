@@ -22,7 +22,9 @@ const { pathParse, serializePath } = require('./lib/path_parse')
 
 const pathDatas = pathParse(__your_path__).getSegments()
 // const pathDatas = pathParse(__your_path__).normalize({round: 2})
+// const pathDatas = pathParse(__your_path__).relNormalize({round: 2})
 // const pathDatas = pathParse(__your_path__).absNormalize({round: 2})
+// const pathDatas = pathParse(__your_path__).absCairo({round: 2})
 
 serializePath(pathDatas)
 
@@ -36,12 +38,11 @@ console.log('pathDatas', serializePath(pathDatas))
 ### normalize
 ### absNormalize
 ### relNormalize
+### absCairo
 ### serializePath
 
 
 ## License
 
 MIT
-
-
 
