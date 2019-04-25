@@ -8,7 +8,7 @@ not with full svg xml sources.
 ## Install 
 
 ```
-npm install svgpath
+npm install svg-path-parse
 ```
 
 ## Usage 
