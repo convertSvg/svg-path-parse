@@ -124,7 +124,7 @@ Converts all path commands to absolute based on [cairo](https://www.cairographic
 ```
 
 ### relCairo
-Converts all path commands to relative on [cairo](https://www.cairographics.org) and [CairoSVG](https://github.com/Kozea/CairoSVG). Converts smooth curves Q/q/T/t/S/s with "missed" control point to generic curves (C),  Converts V/v/H/h to lineto (L), data format as follows:
+Converts all path commands to relative on [cairo](https://www.cairographics.org) and [CairoSVG](https://github.com/Kozea/CairoSVG). Converts smooth curves Q/q/T/t/S/s with "missed" control point to generic curves (c),  Converts V/v/H/h to lineto (l), data format as follows:
 
 ```js
 // example
