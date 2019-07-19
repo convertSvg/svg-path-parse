@@ -1,6 +1,6 @@
 {
   "name": "svg-path-parse",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "This is a small library to normalise SVG paths based on those normalised paths.",
   "main": "./lib/path_parse.js",
   "scripts": {
