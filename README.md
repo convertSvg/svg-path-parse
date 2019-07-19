@@ -28,7 +28,7 @@ const pathDatas = pathParse(__your_path__).getSegments()
 // const pathDatas = pathParse(__your_path__).relCairo({round: 2})
 
 // out put
-// { err: '',  { type: 'M', args: [20, 20] },  { type: 'L', args: [30, 30] }}
+// { err: '',  segments:[ { 'type': 'M', 'args' : [230, 230] }] }
 
 serializePath(pathDatas)
 
