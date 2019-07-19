@@ -18,7 +18,7 @@ Takes an SVG path string. The following code…
 -------
 
 ```js
-const { pathParse, serializePath } = require('./lib/path_parse')
+const { pathParse, serializePath } = require('svg-path-parse')
 
 const pathDatas = pathParse(__your_path__).getSegments()
 // const pathDatas = pathParse(__your_path__).normalize({round: 2})
