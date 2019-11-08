@@ -1,19 +1,44 @@
 const { pathParse, serializePath } = require('./lib/path_parse')
+const SVGParser = require('convertpath')
 const fs = require('fs')
 
-const pathDatas = pathParse('M511.23 938.53c235.71 0 426.78 -191.04 426.79 -426.79s-191.04 -426.78 -426.79 -426.78s-426.78 191.04 -426.78 426.78s191.04 426.78 426.78 426.79zm0 -819.39c216.48 0 392.64 176.13 392.64 392.64s-176.16 392.64 -392.64 392.64s-392.64 -176.16 -392.64 -392.64s176.16 -392.64 392.64 -392.64z').absCairo({
-  round: 2
+
+const parse = SVGParser.parse('./test/icon_icebox.svg', {
+  plugins: [
+    {
+      convertUseToGroup: true, // at first
+    },
+    {
+      convertShapeToPath: true,
+    },
+    {
+      removeGroups: true,
+    },
+    {
+      convertTransfromforPath: true,
+    },
+    {
+      viewBoxTransform: true, // at last
+    }
+  ],
+  size: 1024,
 })
 
-writeToFile(pathDatas.segments, './data.json')
+const paths = parse.getPathAttributes()
 
-console.log('pathDatas', pathDatas.segments)
-console.log('pathDatas', serializePath(pathDatas))
+paths.forEach(item => {
+  if (item.d) {
+    const pathDatas = pathParse(item.d).absNormalize({ round: 2 })
+    item.d = serializePath(pathDatas)
+  }
+})
 
-function writeToFile (data, path, calllback) {
-  data = JSON.stringify(data, null, '\t')
-  fs.writeFile(path, data, 'utf-8', function (err) {
-    if (err) throw err
-    calllback && calllback()
-  })
+const svgStr = `<svg viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+${
+  paths.map(item => {
+    return `<path d="${item.d}" fill="${item.fill}" />`
+  }).join('')
 }
+</svg>
+`
+fs.writeFileSync('./test.svg', svgStr)
