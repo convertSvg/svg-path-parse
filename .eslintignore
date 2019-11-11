@@ -7,3 +7,4 @@ docs/
 test.js
 jest.config.js
 __mock__/
+./lib/matrix.js
