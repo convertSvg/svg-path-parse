@@ -1,6 +1,6 @@
 {
   "name": "svg-path-parse",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "This is a small library to normalise SVG paths based on those normalised paths.",
   "main": "./lib/path_parse.js",
   "scripts": {
@@ -27,7 +27,7 @@
     "@commitlint/config-conventional": "^7.0.1",
     "babel-eslint": "^10.0.1",
     "chalk": "^2.4.1",
-    "convertpath": "^1.2.1",
+    "convertpath": "^1.2.2",
     "eslint": "^4.19.1",
     "eslint-config-o2team": "^0.1.6",
     "eslint-plugin-import": "^2.12.0",
