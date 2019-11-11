@@ -10,7 +10,8 @@
     "prefer-const": 1,
     "array-callback-return": 0,
     "no-mixed-operators": 0,
-    "no-unused-vars": 0
+    "no-unused-vars": 0,
+    "no-case-declarations": 0
   },
   "overrides": [
     {
