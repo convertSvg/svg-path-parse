@@ -21,11 +21,11 @@ Takes an SVG path string. The following code…
 const { pathParse, serializePath } = require('svg-path-parse')
 
 const pathDatas = pathParse(__your_path__).getSegments()
-// const pathDatas = pathParse(__your_path__).normalize({round: 2})
-// const pathDatas = pathParse(__your_path__).relNormalize({round: 2})
-// const pathDatas = pathParse(__your_path__).absNormalize({round: 2})
-// const pathDatas = pathParse(__your_path__).absCairo({round: 2})
-// const pathDatas = pathParse(__your_path__).relCairo({round: 2})
+// const pathDatas = pathParse(__your_path__).normalize({round: 2, transform: 'translate(10, 10) scale(0.5)'})
+// const pathDatas = pathParse(__your_path__).relNormalize({round: 2,transform: 'translate(10, 10) scale(0.5)'})
+// const pathDatas = pathParse(__your_path__).absNormalize({round: 2,transform: 'translate(10, 10) scale(0.5)'})
+// const pathDatas = pathParse(__your_path__).absCairo({round: 2,transform: 'translate(10, 10) scale(0.5)'})
+// const pathDatas = pathParse(__your_path__).relCairo({round: 2,transform: 'translate(10, 10) scale(0.5)'})
 
 // out put
 // { err: '',  segments:[ { 'type': 'M', 'args' : [230, 230] }] }
