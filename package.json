@@ -17,7 +17,8 @@
     "*.js": [
       "eslint --quiet --cache --fix",
       "git add"
-    ]
+    ],
+    "ignore": ["./lib/matrix.js"]
   },
   "author": "pfan",
   "license": "MIT",
